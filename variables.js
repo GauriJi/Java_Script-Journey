@@ -12,11 +12,12 @@ if (true){
 }
 console.log(age);
 
-// let and const are Temporal Dead zone it can be called when the value is not assigned 
+// let and const are Temporal Dead zone it cannot be called till the value is not assigned 
 //in let and var we can reassign value  but not in const
+
 console.log(x);
 var x=1; // it gives you error 
 
-// but in var it gives the undefined not an error
+// but in var it gives  undefined not an error
 console.log(a);
 let a=1;//undefined
