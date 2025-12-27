@@ -22,3 +22,32 @@ let agee=55;
 let result = agee >=24 ? 'Yes':'No'
 
 console.log(result)
+
+//Switch-Case
+
+let option =6;
+
+switch (option){
+    case 1 : console.log("One ")
+    break;
+    case 2 : console.log("Two ")
+    break;
+    case 3 : console.log("Three ")
+    break;
+    default : console.log("Invalid")
+
+}
+
+let a = 12;
+let option1 = '*';
+let b = 5;
+
+switch(option1){
+    case '+':console.log(a+b)
+    break;
+    case'-':console.log(a-b)
+    break;
+    case '*':console.log(a*b)
+    break;
+    default:console.log("NONE")
+}
