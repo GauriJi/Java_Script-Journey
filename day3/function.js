@@ -27,3 +27,36 @@ let final = add(1,6,1,6,5)
 console.log(final)
 
 //Arrow Function 
+let addition= (a,b)=>{
+    return (a+b);
+}
+console.log(addition(1,1))
+
+let add1=(x,y)=> x+y;
+console.log(add1(1,2))
+
+//HOISTING
+
+function minus1(a,b){
+    return a-b;
+
+}
+console.log(minus1(6,5))
+
+
+let minus=(a,b)=>{
+    return a-b;
+}
+console.log(minus(4,2))
+
+
+//High ORder Function
+
+function sum(a,b,gg){
+    let result =(a+b);
+    gg(result);
+}
+function showResult(result){
+    console.log(result)
+}
+sum(22,5,showResult)
