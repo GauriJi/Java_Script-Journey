@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- #EVENT LISTNER 1:-->
+    <!-- <button id="Button">Click Me</button>
+    <script>
+        const button = document.getElementById("Button");
+
+        button.addEventListener('click',function(){
+            console.log("Button Clicked");
+            alert("Someone Clicked that Button");
+
+        });
+    </script> -->
+
+    <!-- EXample 2: -->
+    <!-- <button id="Button">Click Me</button>
+    <script>
+        const button = document.getElementById("Button");
+
+        function button1(){
+            console.log(" Clicked By me")
+            alert("Welcome to Event Listener")
+        }
+        button.addEventListener('click',button1);
+    </script> -->
+
+    <div class="block">
+        <h4 id ="name-block">Hey There, My name is 
+            <span id ="username">Gaurav Bhandari</span> 
+        </h4>
+        <p class="block remove">Here is a code </p>
+        <pre><code >console.log("Hey There")</code></pre>
+        </div>
+
+    <button id = "clickButton">Click Me</button>
+
+    <script>
+        const allChildren= document.querySelector("body").children
+
+        for(let i=0; i<allChildren.length;i++){
+        allChildren.item(i).addEventListener("click",()=>{
+            allChildren.item(i).remove();
+
+        });
+    }
+    </script>
+</body>
+</html>
